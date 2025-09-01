@@ -651,42 +651,81 @@ Honours in Applied Mathematics!
           </ul>
 
         </section>
-        <section id="cv" style="padding: 60px 20px; text-align: center; background: #f9fafb;">
-        <h2 style="font-size: 2rem; margin-bottom: 20px;">My CV</h2>
-        <p style="font-size: 1.1rem; margin-bottom: 25px;">
-          You can view my latest CV in a new tab or download it using the link below:
-        </p>
-      
+        <section class="cv">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="document-text-outline"></ion-icon>
+    </div>
+    <h3 class="h3 cv-title">My CV</h3>
+  </div>
+
+  <ul class="cv-list content-card">
+
+    <li class="cv-item">
+      <div class="title-wrapper">
+        <h5 class="h5">Download or View</h5>
+      </div>
+
+      <div class="cv-links">
         <!-- Replace FILE_ID with your real Google Drive file ID -->
         <a
-          href="https://drive.google.com/file/d/https://drive.google.com/file/d/1aHZ3yxGIxNaHkuqxTbNWSR8EfjDP_mTt/view?usp=sharing/view?usp=sharing"
-          class="download-btn"
+          href="https://drive.google.com/file/d/FILE_ID/view?usp=sharing"
+          class="cv-btn"
           target="_blank"
           rel="noopener"
         >
-          👀 View CV (New Tab)
+          👀 View CV
         </a>
-      </section>
-      
-      <style>
-        .download-btn {
-          display: inline-block;
-          padding: 14px 22px;
-          border-radius: 12px;
-          text-decoration: none;
-          font-weight: 600;
-          font-size: 1.1rem;
-          background-color: #2563eb;
-          color: #fff;
-          border: none;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.12);
-          transition: all 0.2s ease-in-out;
-        }
-        .download-btn:hover {
-          background-color: #1e40af;
-          transform: translateY(-2px);
-        }
-      </style>
+
+        <a
+          href="https://drive.google.com/uc?export=download&id=FILE_ID"
+          class="cv-btn"
+          rel="noopener"
+        >
+          ⬇️ Download CV
+        </a>
+      </div>
+    </li>
+
+  </ul>
+</section>
+
+<style>
+  .cv-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cv-item {
+    margin-bottom: 20px;
+  }
+
+  .cv-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .cv-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #2563eb;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .cv-btn:hover {
+    background-color: #1e40af;
+    transform: translateY(-2px);
+  }
+</style>
 
       </article>
 
